@@ -1,0 +1,38 @@
+.brandsection{
+    float: left;
+    width:80%;
+    
+}
+.logoutsection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    float: right;
+    align-items: center;
+    width: 20%;
+    cursor: pointer;
+    
+}
+nav{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 2%;
+    padding: 0.2% 0% 1%  0%;
+    border: 1px solid  rgb(216, 209, 209);
+    border-radius: 2px;
+}
+
+
+@media only screen and (max-width: 900px),
+(min-device-width: 768px)   {
+    .brandsection{
+        width:70%;
+    }
+    .logoutsection{
+        width:30%;
+    }  
+}

@@ -1,0 +1,99 @@
+table {
+  width: 99%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  scroll-behavior: smooth;
+  cursor: pointer;
+  
+}
+
+tr{
+  background-color: white;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: teal;
+}
+
+.selected {
+  background-color: whitesmoke;
+}
+
+tfoot {
+  width: auto;
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  table,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  thead{
+    display: none;
+  }
+
+  tr {
+    border: 2px solid black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  td {
+    border: none;
+    border-bottom: 2px solid #eee;
+    position: relative;
+    padding-left: 8%;
+    white-space: wrap;
+    text-align: end;
+    height: auto;
+  }
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    white-space: wrap;
+    text-align: start;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Id";
+    color: teal;
+    font-weight: bold;
+  }
+  td:nth-of-type(2):before {
+    content: "CustomerName:";
+    color: teal;
+    font-weight: bold;
+  }
+  td:nth-of-type(3):before {
+    content: "Price ₹:";
+    color: teal;
+    font-weight: bold;
+  }
+  td:nth-of-type(4):before {
+    content: "Last Modified";
+    color: teal;
+    font-weight: bold;
+  }
+  td:nth-of-type(5):before {
+    content: "Edit/View";
+    color: teal;
+    font-weight: bold;
+  }
+
+}
